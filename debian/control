@@ -1,0 +1,51 @@
+Source: node-sshpk
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-asn1 <!nocheck>
+ , node-assert-plus <!nocheck>
+ , node-bcrypt-pbkdf <!nocheck>
+ , node-dashdash <!nocheck>
+ , node-ecc-jsbn <!nocheck>
+ , node-getpass <!nocheck>
+ , node-jsbn <!nocheck>
+ , node-marked-man
+ , node-safe-buffer (>= 5.2.1+~cs2.1.2) <!nocheck>
+ , node-sinon (>= 7) <!nocheck>
+ , node-tape <!nocheck>
+ , node-temp <!nocheck>
+ , node-tweetnacl <!nocheck>
+ , openssl <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-sshpk
+Vcs-Git: https://salsa.debian.org/js-team/node-sshpk.git
+Homepage: https://github.com/arekinath/node-sshpk#readme
+Rules-Requires-Root: no
+
+Package: node-sshpk
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , node-asn1
+ , node-assert-plus
+ , node-bcrypt-pbkdf
+ , node-dashdash
+ , node-ecc-jsbn
+ , node-getpass
+ , node-jsbn
+ , node-safe-buffer (>= 5.2.1+~cs2.1.2)
+ , node-tweetnacl
+ , nodejs:any
+Description: library for finding and using SSH public keys
+ Parse, convert, fingerprint and use SSH keys (both public and private) in
+ pure node -- no `ssh-keygen` or other external dependencies.
+ .
+ Supports RSA, DSA, ECDSA (nistp-\*) and ED25519 key types, in PEM (PKCS#1,
+ PKCS#8) and OpenSSH formats.
+ .
+ Node.js is an event-based server-side JavaScript engine.

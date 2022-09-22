@@ -1,0 +1,25 @@
+Description: Use marked man
+--- a/Makefile
++++ b/Makefile
+@@ -18,7 +18,7 @@
+ # Tools
+ #
+ # Get md2man-roff from <https://github.com/sunaku/md2man>
+-MD2MAN		:= md2man-roff
++MD2MAN		:= marked-man
+ NPM_EXEC	:= npm
+ TAP		:= ./node_modules/.bin/tape
+ 
+@@ -43,10 +43,10 @@
+ # Repo-specific targets
+ #
+ .PHONY: all
+-all: $(REPO_DEPS)
++all: $(REPO_DEPS) manpages
+ #	$(NPM_EXEC) install
+ 
+-CLEAN_FILES += $(TAP) ./node_modules/tap
++CLEAN_FILES += $(TAP) ./node_modules/tap $(MAN_OUTDIR)
+ 
+ .PHONY: test
+ test: all

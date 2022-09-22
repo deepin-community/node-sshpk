@@ -1,0 +1,85 @@
+node-sshpk (1.16.1+dfsg1-1) unstable; urgency=medium
+
+  * Team upload
+  * Replace embedded safer-buffer by a dependency to node-safe-buffer ≥
+    5.2.1+~cs2.1.2 and repack
+  * Bump debhelper compatibility level to 13
+  * Fix GitHub tags regex
+  * Use dh-sequence-nodejs
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+  * Update nodejs dependency => nodejs:any
+
+ -- Yadd <yadd@debian.org>  Tue, 16 Nov 2021 11:10:34 +0100
+
+node-sshpk (1.16.1+dfsg-2) unstable; urgency=medium
+
+  * Team Upload.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+  [ Nilesh ]
+  * Fix test to build with node-sinon ≥ 7
+  * Bump standards version to 4.5.0
+  * Fix "manpage-has-bad-whatis-entry" warning
+
+  [ Xavier Guimard ]
+  * Require node-sinon ≥ 7
+  * Add Changelog field in metadata
+  * Remove useless debian/dirs
+
+ -- Nilesh <npatra974@gmail.com>  Tue, 28 Jan 2020 23:31:37 +0530
+
+node-sshpk (1.16.1+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.1
+  * Add debian/gbp.conf
+  * New upstream version 1.16.1+dfsg
+  * Refresh patches
+  * Switch test and install to pkg-js-tools
+  * Embed safer-buffer
+  * Drop unneeded version constraints from (build) dependencies
+  * Update debian/copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 19 Oct 2019 09:47:52 +0200
+
+node-sshpk (1.13.1+dfsg-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Pirate Praveen ]
+  * Enable nocheck build profile
+
+  [ Xavier Guimard ]
+  * Declare compliance with policy 4.3.0
+  * Add patch to fix ReDoS when parsing crafted invalid public keys
+    (Closes: #901093, CVE-2018-3737)
+  * Fix VCS fields
+  * Fix debian/copyright format URL
+  * Add descriptions in patches
+  * Add upstream/metadata
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 16 Apr 2019 06:57:20 +0200
+
+node-sshpk (1.13.1+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 1.13.1+dfsg
+  * Unapply remove-jodid25519, applied upstream
+  * Unapply use-nodejs, no longer needed
+  * Run all tests
+  * Build-Depends node-temp, openssl for tests
+  * Patch test wrongly failing
+
+ -- Jérémy Lal <kapouer@melix.org>  Sat, 30 Dec 2017 16:13:52 +0100
+
+node-sshpk (1.13.0+dfsg-1) unstable; urgency=low
+
+  * Initial release (Closes: #862284)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 10 May 2017 21:14:26 +0530

@@ -1,0 +1,15 @@
+Description: test using an actually invalid fingerprint
+Forwarded: https://github.com/joyent/node-sshpk/pull/41
+Last-Update: 2017-12-30
+Author: Jérémy Lal <kapouer@melix.org>
+--- a/test/fingerprint.js
++++ b/test/fingerprint.js
+@@ -164,7 +164,7 @@
+ 	}, sshpk.FingerprintFormatError);
+ 	t.throws(function () {
+ 		var fp = sshpk.parseFingerprint(
+-		    '59:a4:61:0e:38:18:9f:0f:28:58:2a:27:f7:65:c5:878');
++		    '59:a4:61:0e:38:18:9f:0f:28:58:2a:27:f7:65:c5:g0');
+ 	}, sshpk.FingerprintFormatError);
+ 	t.throws(function () {
+ 		var fp = sshpk.parseFingerprint(

@@ -1,0 +1,3 @@
+sshpk/bin/sshpk-conv /usr/bin/sshpk-conv
+sshpk/bin/sshpk-sign /usr/bin/sshpk-sign
+sshpk/bin/sshpk-verify /usr/bin/sshpk-verify

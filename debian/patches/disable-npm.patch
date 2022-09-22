@@ -1,0 +1,12 @@
+Description: Disable npm
+--- a/Makefile
++++ b/Makefile
+@@ -44,7 +44,7 @@
+ #
+ .PHONY: all
+ all: $(REPO_DEPS)
+-	$(NPM_EXEC) install
++#	$(NPM_EXEC) install
+ 
+ CLEAN_FILES += $(TAP) ./node_modules/tap
+ 

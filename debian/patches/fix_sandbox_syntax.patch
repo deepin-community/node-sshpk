@@ -1,0 +1,12 @@
+Description: Fix sinon syntax w.r.t new version
+--- a/test/dhe_compat.js
++++ b/test/dhe_compat.js
+@@ -23,7 +23,7 @@
+ var sandbox;
+ 
+ test('set up sandbox', function (t) {
+-	sandbox = sinon.sandbox.create();
++	sandbox = sinon.createSandbox();
+ 	sandbox.stub(crypto, 'createECDH');
+ 	t.ok(crypto.createECDH('prime256v1') === undefined);
+ 
