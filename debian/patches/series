@@ -2,3 +2,4 @@ test-parse-fingerprint.patch
 disable-npm.patch
 use-marked-man.patch
 fix_sandbox_syntax.patch
+drop-some-tests-for-nodejs-16.patch
