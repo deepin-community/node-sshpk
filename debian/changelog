@@ -1,3 +1,18 @@
+node-sshpk (1.17.0+dfsg-2) unstable; urgency=medium
+
+  * Team upload
+  * Fix test for nodejs >= 16
+
+ -- Yadd <yadd@debian.org>  Wed, 04 May 2022 06:34:02 +0200
+
+node-sshpk (1.17.0+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 1.17.0+dfsg
+  * Refreshed patch due to upstream changes
+
+ -- Israel Galadima <izzygaladima@gmail.com>  Thu, 07 Apr 2022 10:12:58 +0000
+
 node-sshpk (1.16.1+dfsg1-1) unstable; urgency=medium
 
   * Team upload

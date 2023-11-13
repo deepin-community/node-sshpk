@@ -8,7 +8,7 @@ Description: Use marked man
 -MD2MAN		:= md2man-roff
 +MD2MAN		:= marked-man
  NPM_EXEC	:= npm
- TAP		:= ./node_modules/.bin/tape
+ TAP		:= ./node_modules/tape/bin/tape
  
 @@ -43,10 +43,10 @@
  # Repo-specific targets
